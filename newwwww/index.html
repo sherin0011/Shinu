@@ -151,9 +151,7 @@ p{
     box-shadow:0 20px 50px rgba(212,175,55,.4);
     transition:.4s;
 }
-.btn:hover{
-    transform:scale(1.08);
-}
+.btn:hover{transform:scale(1.08)}
 
 /* ---------- Gallery ---------- */
 .gallery{
@@ -189,9 +187,17 @@ p{
     .gallery{grid-template-columns:1fr}
 }
 </style>
+<audio id="bgm" loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_0b1b0a4b6d.mp3?filename=emotional-piano-112191.mp3" type="audio/mpeg">
+</audio>
 </head>
 
+
 <body>
+
+<audio id="bgm" loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_0b1b0a4b6d.mp3?filename=emotional-piano-112191.mp3" type="audio/mpeg">
+</audio>
 
 <!-- PAGE 1 -->
 <div class="page active" id="page1">
@@ -208,7 +214,6 @@ p{
             you became my calm.
         </div>
     </div>
-    <button class="btn" onclick="go(2)">Open My Heart ✨</button>
 </div>
 
 <!-- PAGE 2 -->
@@ -221,67 +226,45 @@ p{
         <p>You didn’t just enter my life — you settled into it.</p>
         <div class="signature">Always yours</div>
     </div>
-    <button class="btn" onclick="go(3)">Our Journey</button>
 </div>
 
-<!-- PAGE 3 (IMAGES HERE) -->
+<!-- PAGE 3 -->
 <div class="page" id="page3">
     <div class="orb navy"></div>
     <div class="card">
         <h2>Our Journey</h2>
         <p>We fought. We learned. We stayed.</p>
-
         <div class="gallery">
             <div><img src="images/img1.jpeg"></div>
             <div><img src="images/img2.jpeg"></div>
             <div><img src="images/img3.jpeg"></div>
             <div><img src="images/img4.jpeg"></div>
         </div>
-
         <div class="final">Perfectly imperfect ✨</div>
     </div>
-    <button class="btn" onclick="go(4)">getting closer</button>
 </div>
 
 <!-- PAGE 4 -->
 <div class="page" id="page4">
     <div class="orb pink"></div>
-    <span class="heart" style="top:25%;left:55%">♥</span>
-
     <div class="card">
-        <h2>You are my everything </h2>
+        <h2>You are my everything</h2>
         <p>
             നീ അടുത്തിരുന്നാൽ  
-            ലോകം നിശ്ശബ്ദമാകും.  
-            എന്റെ ഉള്ളിലെ ആശങ്കകൾ പോലും  
-            നിന്നെ കണ്ടാൽ ശാന്തമാകും.
-        </p>
-        <p>
-            ഒന്നും പറയാതെ ഇരിക്കുമ്പോഴും  
-            നിനക്കൊപ്പം ഞാൻ പൂർണ്ണനാണ്.
+            ലോകം നിശ്ശബ്ദമാകും.
         </p>
         <div class="signature">നിന്റെ മാത്രം</div>
     </div>
-    <button class="btn" onclick="go(5)">രാത്രിയിലെ നമുക്ക് മാത്രം</button>
 </div>
 
 <!-- PAGE 5 -->
 <div class="page" id="page5">
     <div class="orb navy"></div>
     <div class="card">
-        <h2>Night talk</h2>
-        <p>
-            ലോകം ഉറങ്ങുമ്പോൾ  
-            നമുക്ക് മാത്രം ഉള്ള വാക്കുകൾ…
-        </p>
-        <p>
-            നിന്റെ ശബ്ദം കേട്ട്  
-            ഉറങ്ങാൻ കഴിയുന്ന  
-            ആ ആശ്വാസം.
-        </p>
+        <h2>Night Talk</h2>
+        <p>നിന്റെ ശബ്ദം കേട്ട് ഉറങ്ങാൻ കഴിയുന്ന ആ ആശ്വാസം.</p>
         <div class="signature">എന്നേക്കുമായി</div>
     </div>
-    <button class="btn" onclick="go(6)">ഒരു വാഗ്ദാനം</button>
 </div>
 
 <!-- PAGE 6 -->
@@ -289,40 +272,40 @@ p{
     <div class="orb gold"></div>
     <div class="card">
         <h2>ഞാൻ നിന്റേതാണ്</h2>
-        <p>ഞാൻ പൂർണ്ണനല്ല. പക്ഷേ, ഞാൻ സത്യമാണ്.</p>
-        <p>നീ എന്റെ ജീവിതത്തിൽ വന്നതല്ല — നീ എന്റെ ജീവിതം തന്നെയാണ്.</p>
-        <div class="final">
-            “നീ ഉണ്ടെങ്കിൽ  
-            എനിക്ക് മറ്റൊന്നും വേണ്ട.”
-        </div>
+        <p>നീ എന്റെ ജീവിതം തന്നെയാണ്.</p>
+        <div class="final">“നീ ഉണ്ടെങ്കിൽ എനിക്ക് മറ്റൊന്നും വേണ്ട.”</div>
     </div>
-    <button class="btn" onclick="go(7)">Thank You 🤍</button>
 </div>
 
-<!-- PAGE 7 THANK YOU -->
+<!-- PAGE 7 -->
 <div class="page" id="page7">
     <div class="orb gold"></div>
     <div class="orb pink"></div>
-    <span class="heart" style="top:35%;left:45%">♥</span>
-
     <div class="landing">
         <div class="title">Thank You</div>
         <div class="subtitle">For choosing me. For staying.</div>
         <div class="quote">
-            ഈ സ്നേഹത്തിനും,<br>
-            ഈ സഹനത്തിനും,<br>
-            ഈ നമ്മൾക്കുമായി —<br><br>
+            ഈ നമ്മൾക്കായി —<br><br>
             <strong>നന്ദി 🤍</strong>
         </div>
     </div>
-    <button class="btn" onclick="go(1)">Start Again</button>
 </div>
 
 <script>
+let page = 1;
+
 function go(n){
     document.querySelector('.page.active').classList.remove('active');
     document.getElementById('page'+n).classList.add('active');
+    page = n;
 }
+
+
+// MUSIC START ON FIRST TOUCH
+document.body.addEventListener('click', (  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_0b1b0a4b6d.mp3?filename=emotional-piano-112191.mp3" type="audio/mpeg">
+) => {
+    document.getElementById('bgm').play();
+},{ once:true });
 </script>
 
 </body>
